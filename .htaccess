@@ -1,0 +1,5 @@
+<FilesMatch "^\.env$">
+    SetEnvIf X-Forwarded-Proto "https" HTTPS=on
+    Order allow,deny
+    Deny from all
+</FilesMatch>
